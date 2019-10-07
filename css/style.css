@@ -1,0 +1,586 @@
+*{
+      padding:0;
+      margin:0;
+}
+
+body, html{
+      margin:0;
+      padding:0;
+      width: 100%;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.header, .comments-about{
+      background: linear-gradient(90deg,rgba(0, 222, 170, 1), rgba(0, 212, 212, 0.7) ),url(../img/background.jpg) no-repeat;
+      padding: 40px 90px;
+      background-size: cover;
+}
+
+.main-menu{
+      display:flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+}
+
+.main-menu>img{
+      width: 200px;
+      height: 100px;
+      cursor: pointer;
+}
+
+.main-menu>img:hover{
+      opacity: 0.4;
+}
+
+nav{
+      display:flex;
+      width: 30%;
+      justify-content: space-between;
+      font-size: 18px;
+}
+
+nav>a:hover{
+      color:black;
+      cursor: pointer;
+}
+
+.sign-up{
+      padding: 3px 20px;
+      border: 2px white solid;
+      cursor:pointer;
+      border-radius: 2px;
+}
+
+.menu-content,.content-blocks{
+      display:flex;
+      justify-content: space-between;
+      margin: 160px 0;
+}
+
+.menu-content-info,.content-info, .comments{
+      width: 42%;
+}
+
+.menu-content-buttons{
+      display:flex;
+      justify-content: flex-start;
+      margin-top:40px;
+}
+
+.menu-content-button, .form-button{
+      width:18%;
+      margin-right: 30px;
+      padding: 20px 20px;
+      background: white;
+      border-radius: 5px;
+      text-align: center;
+      font-weight: bold;
+      color: #00171f;
+      cursor: pointer;
+      box-shadow: 0 5px 10px #012045;
+}
+
+.menu-content-button:hover, .form-button:hover{
+      color:white;
+      background: #012045;
+}
+
+iframe{
+      width: 100%;
+      height: 100%;
+}
+
+.menu-content-info>h1{
+      font-size:72px;
+      color:white;
+}
+
+.menu-content-info>h2{
+      color:white;
+      font-weight: normal;
+}
+
+.content{
+      width: 100%;
+}
+
+.easy-useful, .services{
+      padding: 50px 90px 150px 90px;
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+}
+
+.easy-useful-title, .easy-useful-block, .team-title, .team-person-info, .contact-us-title{
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 75px 0 75px 0;
+}
+
+.easy-useful-title>h1, .team-title>h1, .contact-us-title>h1{
+      font-size: 60px;
+      font-weight: bolder;
+      margin-bottom: 10px;
+}
+
+.easy-useful-title>h2, .team-person-info>h2{
+      font-size: 36px;
+      font-weight: bold;
+      margin: 7px 15px;
+      color: #858585;
+}
+
+.easy-useful-title>p, .team-title>p, .team-person-info>p, .contact-us-title>p{
+      color: #858585;
+      opacity: 0.8;
+      font-size: 21px;
+}
+
+.easy-useful-blocks{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+}
+
+.easy-useful-block{
+      width: 25%;
+      color: #858585;
+}
+
+.easy-useful-block>img{
+      width: 100px;
+      height: 100px;
+}
+
+.easy-useful>.menu-content-button, .form-button{
+      background: #00deaa;
+      width: 8%;
+      color:white;
+      margin:0;
+}
+
+.advertising{
+      width: 100%;
+      display:flex;
+      opacity: 0.7;
+}
+
+.advertising-block{
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      width: 25%;
+      background: blue;
+      padding: 50px 0;
+      opacity:0.8;
+}
+
+.advertising-block>img{
+      width: 75px;
+      height: 75px;
+}
+
+.advertising-block>div{
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 30px;
+      font-weight: bold;
+      color:white;
+      font-size: 21px;
+}
+
+.team-about, .contact-us{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 150px;
+}
+
+.list{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+}
+
+.list-block{
+      width: 55%;
+      display:flex;
+      flex-direction: column;
+      padding: 20px;
+      margin-bottom:10px;
+      border-radius: 5px;
+      box-shadow: 0 0 5px gray;
+}
+
+.list-block-header{
+      width: 100%;
+      display:flex;
+      justify-content: space-between;
+      align-items: center;
+}
+
+.list-block-content{
+      width: 12%;
+      display:flex;
+      align-items: center;
+}
+
+.list-block-content>img,.list-block-header>img{
+      width: 25px;
+      height: 25px;
+}
+
+.list-block-content>img{
+      margin-right: 10px;
+}
+
+.list-block-info{
+      width: 100%;
+      margin-top:30px;
+      display:flex;
+      align-items: stretch;
+      font-size: 21px;
+}
+
+.list-block-info>img{
+      width: 300px;
+      height: 200px;
+      border-radius: 7px;
+      margin-right: 20px;
+}
+
+.content-info>h1{
+      width: 80%;
+      font-size: 52px;
+      font-weight: bold;
+      color:white;
+}
+
+.content-blocks>.menu-content-info>.menu-content-buttons{
+      margin-top: 100px;
+}
+
+.content-blocks{
+      display:flex;
+      justify-content: space-between;
+      align-items: center;
+      margin:0;
+}
+
+.content-blocks>.menu-content-info{
+      width: 40%;
+}
+
+.cursor-image>img{
+      width: 40px;
+      height: 40px;
+}
+
+.cursor-image{
+      width: 70%;
+      padding: 0 30px;
+      margin-left: 40px ;
+      display: flex;
+      justify-content: center;      
+}
+
+.comments{
+      width: 55%;
+      display:flex;
+      flex-direction: column;
+      align-items: flex-end;
+}
+
+.message-block{
+      width: 100%;
+      display:flex;
+      justify-content: flex-end;
+      align-items: center;
+}
+
+.message{
+      width: 70%;
+      padding: 30px;
+      margin: 25px 0 25px 40px ;
+      background: white;
+      border-radius: 10px;
+}
+
+.message-block>img{
+      width: 80px;
+      height: 80px;
+}
+
+.message>span{
+      font-weight: bold;
+      font-size: 21px;
+}
+
+.message>p{
+      font-style: italic;
+      color: #858585;
+      margin-top:10px;
+      font-size: 18px;
+}
+
+.team-about{
+      padding: 30px 0;
+}
+
+.team-photos{
+      display:flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.team-photos>img{
+      width: 200px;
+      height: 200px;
+      border-radius: 100px;
+      filter: drop-shadow(0 0 10px black);
+}
+
+.team-photos>img:last-child, .team-photos>img:first-child{
+      opacity: 0.4;
+      width: 100px;
+      height: 100px;
+      margin:50px;
+}
+
+.team-person-info{
+      padding: 75px 0 20px 0;
+}
+
+.team-person-info>h2{
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+}
+
+.team-person-links>img{
+      width: 40px;
+      height: 40px;
+      margin: 0 10px;
+}
+
+.contact-us{
+      padding-bottom:60px;
+}
+
+.contact-us-title>p{
+      color: black;
+}
+
+.contact-us-form{
+      width: 40%;
+}
+
+.form-name, .form-info, .form-send, .form-message{
+      margin-bottom: 20px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+
+.form-name>input, .form-info>input{
+      width: 43%;
+      height: 30px;
+      padding: 15px;
+      border: 1px solid black;
+      border-radius: 5px;
+      font-size: 18px;
+      outline: none;
+}
+
+textarea{
+      outline: none;
+      display:block;
+      width: 100%;
+      border: 1px solid black;
+      border-radius: 5px;
+      font-size: 18px;
+      height: 180px;
+      resize: none;
+      padding: 15px;
+}
+
+.form-send>.form-button{
+      width: 15%;
+}
+
+.form-send>p{
+      font-size: 21px;
+}
+
+.form-send>p>input{
+      margin-right: 20px;
+      width: 20px;
+      height: 20px;
+      background-color: white;
+      color: white;
+      box-shadow: 1px -1px 1px black;
+}
+
+.footer{
+      background: #012045;
+      padding: 90px 90px;
+}
+
+.footer-menu>a{
+      margin-right: 20px;
+      color: #858585;
+      font-size: 21px;
+}
+
+.footer-menu>a:hover{
+      color: white;
+}
+
+.footer-menu>img{
+      width: 10px;
+      height: 10px;
+      margin-right: 20px;
+}
+
+@media screen and (max-device-width:600px){
+      .header{
+            padding: 20px;
+      }
+      
+      .main-menu{
+            width: 100%;
+            display:flex;
+            flex-direction: column;
+      }
+
+      .main-menu>img{
+            width: 80%;
+            height: 200px;
+      }
+
+      .main-menu>nav{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 48px;
+      }
+
+      .main-menu>nav>a{
+            width: 80%;
+            padding: 50px;
+            border: 3px solid white;
+      }
+
+      .sign-up{
+            width: 80%;
+            margin: 50px 0;
+            text-align: center;
+            font-size: 48px;
+            padding: 50px;
+            border: 5px solid white;
+      }
+
+      .menu-content{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin:0;
+      }
+
+      .menu-content-info{
+            width: 90%;
+      }
+
+      .menu-content-buttons{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin: 50px 0;
+      }
+
+      .menu-content-button{
+            width: 42%;
+            margin:0;
+            font-size: 42px;
+      }
+
+      iframe{
+            height: 500px;
+      }
+
+      .easy-useful, .services{
+            padding: 0 70px;
+      }
+
+      .easy-useful-title{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+      }
+
+      .easy-useful-title>h2{
+            margin:0 0 15px 0;
+      }
+
+      .easy-useful-title>p{
+            text-align: start;
+            font-size: 21px;
+      }
+
+      .easy-useful-blocks{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            font-size: 21px;
+      }     
+
+      .easy-useful-block{
+            width: 97%;
+            padding: 10px;
+            margin: 20px 0;
+            border: 2px solid black;
+            border-radius: 10px;
+      }
+
+      .easy-useful>.menu-content-button{
+            width: 100%;
+            height: 100px;
+            padding:10px;     
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+      }
+
+      .list{
+            margin-bottom: 50px;
+      }
+      
+      .list-block{
+            width: 100%;
+            font-size: 21px;
+      }
+      
+      .list-block-info{
+            width: 100%;
+            display: flex;
+            flex-direction: column;     
+      }
+
+      .list-block-info>img{
+            width: 100%;
+            height: auto;
+            margin-bottom: 50px;
+      }
+}
