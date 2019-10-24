@@ -11,15 +11,23 @@ body, html{
 }
 
 .header, .comments-about{
+      background: -webkit-gradient(linear,left top, right top,from(rgba(0, 222, 170, 1)), to(rgba(0, 212, 212, 0.7)) ),url(../img/background.jpg) no-repeat;
+      background: -o-linear-gradient(left,rgba(0, 222, 170, 1), rgba(0, 212, 212, 0.7) ),url(../img/background.jpg) no-repeat;
       background: linear-gradient(90deg,rgba(0, 222, 170, 1), rgba(0, 212, 212, 0.7) ),url(../img/background.jpg) no-repeat;
       padding: 40px 90px;
       background-size: cover;
 }
 
 .main-menu{
+      display:-webkit-box;
+      display:-ms-flexbox;
       display:flex;
-      justify-content: space-between;
-      align-items: center;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       color: white;
 }
 
@@ -34,9 +42,13 @@ body, html{
 }
 
 nav{
+      display:-webkit-box;
+      display:-ms-flexbox;
       display:flex;
       width: 30%;
-      justify-content: space-between;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
       font-size: 18px;
 }
 
@@ -53,8 +65,12 @@ nav>a:hover{
 }
 
 .menu-content,.content-blocks{
+      display:-webkit-box;
+      display:-ms-flexbox;
       display:flex;
-      justify-content: space-between;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
       margin: 160px 0;
 }
 
@@ -63,8 +79,12 @@ nav>a:hover{
 }
 
 .menu-content-buttons{
+      display:-webkit-box;
+      display:-ms-flexbox;
       display:flex;
-      justify-content: flex-start;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
       margin-top:40px;
 }
 
@@ -78,7 +98,8 @@ nav>a:hover{
       font-weight: bold;
       color: #00171f;
       cursor: pointer;
-      box-shadow: 0 5px 10px #012045;
+      -webkit-box-shadow: 0 5px 10px #012045;
+              box-shadow: 0 5px 10px #012045;
 }
 
 .menu-content-button:hover, .form-button:hover{
@@ -89,7 +110,8 @@ nav>a:hover{
 iframe{
       width: 100%;
       height: 100%;
-      box-shadow: 0 1px 5px 5px #012045;
+      -webkit-box-shadow: 0 1px 5px 5px #012045;
+              box-shadow: 0 1px 5px 5px #012045;
 }
 
 .menu-content-info>h1{
@@ -108,16 +130,30 @@ iframe{
 
 .easy-useful, .services{
       padding: 50px 90px 150px 90px;
+      display:-webkit-box;
+      display:-ms-flexbox;
       display:flex;
-      flex-direction: column;
-      align-items: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
 }
 
 .easy-useful-title, .easy-useful-block, .team-title, .team-person-info, .contact-us-title{
       width: 40%;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column;
-      align-items: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       text-align: center;
       padding: 75px 0 75px 0;
 }
@@ -143,8 +179,12 @@ iframe{
 
 .easy-useful-blocks{
       width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: space-between;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
 }
 
 .easy-useful-block{
@@ -166,14 +206,22 @@ iframe{
 
 .advertising{
       width: 100%;
+      display:-webkit-box;
+      display:-ms-flexbox;
       display:flex;
       opacity: 0.7;
 }
 
 .advertising-block{
+      display:-webkit-box;
+      display:-ms-flexbox;
       display:flex;
-      justify-content: center;
-      align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       width: 25%;
       background: blue;
       padding: 50px 0;
@@ -186,9 +234,16 @@ iframe{
 }
 
 .advertising-block>div{
+      display:-webkit-box;
+      display:-ms-flexbox;
       display:flex;
-      flex-direction: column;
-      justify-content: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
       margin-left: 30px;
       font-weight: bold;
       color:white;
@@ -197,42 +252,74 @@ iframe{
 
 .team-about, .contact-us{
       width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column;
-      align-items: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       padding-bottom: 150px;
 }
 
 .list{
       width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column;
-      align-items: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
 }
 
 .list-block{
       width: 55%;
+      display:-webkit-box;
+      display:-ms-flexbox;
       display:flex;
-      flex-direction: column;
-      align-items: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       margin-bottom:10px;
       border-radius: 5px;
-      box-shadow: 0 0 5px gray;
+      -webkit-box-shadow: 0 0 5px gray;
+              box-shadow: 0 0 5px gray;
 }
 
 .list-block-header{
       width: 95%;
+      display:-webkit-box;
+      display:-ms-flexbox;
       display:flex;
-      justify-content: space-between;
-      align-items: center;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       padding: 20px;
       cursor: pointer;
 }
 
 .list-block-content{
       width: 12%;
+      display:-webkit-box;
+      display:-ms-flexbox;
       display:flex;
-      align-items: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
 }
 
 .list-block-content>img,.list-block-header>img{
@@ -272,9 +359,15 @@ iframe{
 }
 
 .content-blocks{
+      display:-webkit-box;
+      display:-ms-flexbox;
       display:flex;
-      justify-content: space-between;
-      align-items: center;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       margin:0;
 }
 
@@ -291,22 +384,39 @@ iframe{
       width: 70%;
       padding: 0 30px;
       margin-left: 40px ;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: center;      
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;      
 }
 
 .comments{
       width: 55%;
+      display:-webkit-box;
+      display:-ms-flexbox;
       display:flex;
-      flex-direction: column;
-      align-items: flex-end;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+              align-items: flex-end;
 }
 
 .message-block{
       width: 100%;
+      display:-webkit-box;
+      display:-ms-flexbox;
       display:flex;
-      justify-content: flex-end;
-      align-items: center;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
 }
 
 .message{
@@ -339,16 +449,23 @@ iframe{
 }
 
 .team-photos{
+      display:-webkit-box;
+      display:-ms-flexbox;
       display:flex;
-      justify-content: center;
-      align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
 }
 
 .team-photos>img{
       width: 200px;
       height: 200px;
       border-radius: 100px;
-      filter: drop-shadow(0 0 10px black);
+      -webkit-filter: drop-shadow(0 0 10px black);
+              filter: drop-shadow(0 0 10px black);
 }
 
 .team-photos>img:last-child, .team-photos>img:first-child{
@@ -389,9 +506,15 @@ iframe{
 .form-name, .form-info, .form-send, .form-message{
       margin-bottom: 20px;
       width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: space-between;
-      align-items: center;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
 }
 
 .form-name>input, .form-info>input{
@@ -430,7 +553,8 @@ textarea{
       height: 20px;
       background-color: white;
       color: white;
-      box-shadow: 1px -1px 1px black;
+      -webkit-box-shadow: 1px -1px 1px black;
+              box-shadow: 1px -1px 1px black;
 }
 
 .footer{
@@ -461,8 +585,13 @@ textarea{
       
       .main-menu{
             width: 100%;
+            display:-webkit-box;
+            display:-ms-flexbox;
             display:flex;
-            flex-direction: column;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
       }
 
       .main-menu>img{
@@ -472,9 +601,16 @@ textarea{
 
       .main-menu>nav{
             width: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
             font-size: 48px;
       }
 
@@ -495,9 +631,16 @@ textarea{
 
       .menu-content{
             width: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
             margin:0;
       }
 
@@ -507,8 +650,12 @@ textarea{
 
       .menu-content-buttons{
             width: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            justify-content: space-between;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
             margin: 50px 0;
       }
 
@@ -528,9 +675,16 @@ textarea{
 
       .easy-useful-title, .content-info, .contact-us-title{
             width: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            flex-direction: column;
-            align-items: flex-start;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-align: start;
+                -ms-flex-align: start;
+                    align-items: flex-start;
       }
 
       .easy-useful-title>h2{
@@ -544,8 +698,13 @@ textarea{
 
       .easy-useful-blocks{
             width: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            flex-direction: column;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
             font-size: 21px;
       }     
 
@@ -562,9 +721,15 @@ textarea{
             height: 100px;
             padding:10px;     
             margin: 20px 0;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            justify-content: center;
-            align-items: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
       }
 
       .list{
@@ -578,8 +743,13 @@ textarea{
       
       .list-block-info{
             width: 95%;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            flex-direction: column;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
       }
 
       .list-block-info>img{
@@ -594,9 +764,16 @@ textarea{
 
       .content-blocks{
             width: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            flex-direction: column;
-            align-items: flex-start;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-align: start;
+                -ms-flex-align: start;
+                    align-items: flex-start;
       }
 
       .content-info{
@@ -612,9 +789,15 @@ textarea{
       }
 
       .message-block{
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            justify-content: flex-start;
-            align-items: flex-end;
+            -webkit-box-pack: start;
+                -ms-flex-pack: start;
+                    justify-content: flex-start;
+            -webkit-box-align: end;
+                -ms-flex-align: end;
+                    align-items: flex-end;
       }
 
       .message-block>img{
@@ -643,8 +826,12 @@ textarea{
       .team-person-links{
             margin: 50px 0;
             width: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            justify-content: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
       }
       
       .team-person-links>img{
@@ -670,9 +857,15 @@ textarea{
       .footer-menu{
             margin-top: 40px;
             width: 100%;
+            display:-webkit-box;
+            display:-ms-flexbox;
             display:flex;
-            justify-content: space-between;
-            align-items: center;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
       }
 
       .footer-menu>a{
